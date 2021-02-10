@@ -49,8 +49,8 @@
      <span>i am a <br> span </span>
      <!-- the hr tag  -->
      <hr>
-     <!-- the image tag  -->
-     <img src="/" alt=""/>
+     <!-- the image tag src = url loaction  -->
+     <img src="" alt=""/>
      <!-- "ancher" tag links -->
      <a href="www.google.com"> this is a Link </a>
 
@@ -58,12 +58,53 @@
      <blockquote cite="www.thenetninja.co.uk">
         all right gang 
      </blockquote>
-     demo on the style attribute "css"
+     <!-- demo on the style attribute "css" -->
      <p style="color:green"> style me </p>
      <!-- forms -->
-     <h1>HTML FORM</h1>
+     <h1>HTML FORMs</h1>
      <form>
-         <input type="text">
+         <label for="username">enter username</label>
+         <input type="text" id="username">
+         <br>
+         <br>
+         <!-- for email  -->
+         <label for="email">enter email</label>
+         <input type="email" id="email" required> <!--required key word here -->
+         <!-- for password  -->
+         <br>
+         <br>
+         <label for="password">enter password</label>
+         <input type="password" id="password">
      </form>
+     <br>
+     <br>
+     <!-- demostrating use of name attribute for ralated in input tags -->
+      <!-- use of radio -->
+      <h3>use of radio tag</h3>
+     <form>
+         <input type="radio" name="gender" value="male">male <br>
+         <input type="radio" name="gender" value="female">female <br>
+         <input type="radio" name="gender" value="other">other <br>
+     </form>
+     <br><br><br>  <!-- adding space  -->
+     <!-- the selection tag or selection form  -->
+     <form>
+         <label for="question">pick a number</label>
+         <select name="question" id="question">
+             <option value="1">one</option>
+             <option value="2">Two</option>
+             <option value="3">three</option>
+         </select>
+            <br><br>
+         <!-- the textarea with place holder -->
+     <label for="bio">Text Area</label><br>
+     <textarea id="bio" cols="5" rows="10" name="bio" placeholder="about you..."></textarea>
+     </form>
+     <br>
+     <br>
+     <!-- the submit button  -->
+     <input type="submit" value="submit the form">
+     <!-- finally validate form using required key word example on email input tag -->
+
     </body>
 </html> 
